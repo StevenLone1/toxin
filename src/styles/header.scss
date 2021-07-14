@@ -1,0 +1,65 @@
+
+.logo_pic{
+   margin-bottom: 15px;
+   margin-top: 15px;
+}
+ .menu{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+   justify-content: space-between;
+  
+ }
+ 
+ .header_list{
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+ }
+
+ .header_item{
+   margin-right: 20px;
+     
+ }
+ .header_item:last-child{
+   margin-right: 0px;
+ }
+.navbar{
+   position: relative;
+   
+}
+ .header_link{
+   font-size: 14px;
+   line-height: 32px;
+   color:$ds50;
+   text-decoration: none;
+    
+ }
+
+ .but_in{
+   width: 87px;
+   height: 34px;
+   border-radius: 22px;
+   background: white;
+   color: $purple;
+   border-color: $purple;
+   border-style: solid;
+  
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 15px;
+ }
+
+ .but_reg{
+   border-radius: 22px;
+   border-style: none;
+   width: 196px;
+   height: 34px;
+   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+   color: white;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 15px;
+ }

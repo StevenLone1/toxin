@@ -1,0 +1,42 @@
+
+
+$ds100:#1F2041;
+$ds75: rgba(31, 32, 65, 0.75);
+$ds50: rgba(31, 32, 65, 0.5);
+$ds25: rgba(31, 32, 65, 0.25);
+$ds05: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+%h1size{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+%h2size{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;  
+}
+
+%h3size{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; 
+}
+
+%bodysize{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
