@@ -26,9 +26,8 @@
                                         li.footer_li: h3.footer_menu-title ПОДПИСКА
                                         li.footer_li: p.footer_menu-item.footer_subs-text Получайте специальные <br> предложения и новости сервиса
                                         li.footer_li: .footer_input 
-                                                                input.footer_menu-input(type="email", name="Email" placeholder="Email") 
-                                                                .footer_arrow
-                                                                        <img src='/src/assets/arrow_forward.svg' alt='toxin' class="arrow_forward">
+                                                                +subs_textfield('Email') 
+                                                                
                                 
 hr.footer_hr
 .wrapper

@@ -1,5 +1,7 @@
 block config
   include pug/config.pug
+block components
+  include pug/components/textfield.pug
 doctype html
 html
   head(lang=lang)
@@ -18,7 +20,7 @@ html
       include pug/forms.pug  
     main.main    
       block content
-        include pug/_uikit.pug
+        
     footer.footer 
       
       include pug/_footer.pug
