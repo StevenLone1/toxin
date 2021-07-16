@@ -1,0 +1,9 @@
+mixin radio_button(value,text)
+    .radio_button
+        input.radio_input(type="radio" name="sex" value=value)
+        label.radio_text(for=value)=text
+        
+mixin radio_sex 
+    .radio_sex
+        +radio_button('male',"Мужчина").radio_sex_item
+        +radio_button('female',"Женщина").radio_sex_item
