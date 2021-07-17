@@ -474,6 +474,144 @@
   top: 10px;
   left: 30px; }
 
+.icon_info {
+  width: 280px;
+  height: 5px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 50px; }
+
+.icon_style {
+  font-size: 48px;
+  line-height: 41px;
+  color: #BC9CFF;
+  position: absolute;
+  top: 5px;
+  padding-top: 20px; }
+
+.icon_info_text {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-left: 55px;
+  margin: 0; }
+
+.icon_info_subtext {
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 55px;
+  margin: 0; }
+
+.icon_info_hr {
+  border: 1px solid white;
+  box-shadow: 0px 2px 0px rgba(31, 32, 65, 0.1); }
+
+.like_button {
+  position: relative; }
+
+.like_input {
+  appearance: none;
+  position: absolute;
+  z-index: 5;
+  margin: 0px;
+  width: 40px;
+  height: 20px; }
+
+.like_label {
+  position: absolute;
+  top: 4px;
+  left: 23px;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 10px;
+  line-height: 12px; }
+
+.like_label:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 20px;
+  box-shadow: 0 0 0px 0px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -4px;
+  left: -23px;
+  z-index: -1; }
+
+.like_input:checked + .like_label:before {
+  border-color: #BC9CFF; }
+
+.like_input:checked + .like_label {
+  color: #BC9CFF; }
+
+.heart_icon {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 10px;
+  line-height: 9px;
+  position: absolute;
+  top: 6px;
+  left: 7px; }
+
+.heart_icon_fill {
+  color: #BC9CFF; }
+
+.feedback_field {
+  width: 280px;
+  height: 5px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 50px; }
+
+.user_avatar {
+  background-image: url(d811ad583244ce9815d9084708963808.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 22px;
+  width: 48px;
+  height: 68px; }
+
+.feedback_name {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-left: 60px;
+  margin: 0; }
+
+.feedback_date {
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 60px;
+  margin: 0; }
+
+.feedback_text {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 58px;
+  margin: 0; }
+
+.feedback_like {
+  position: absolute;
+  top: 4px;
+  left: 4px; }
+
+.main_feedback {
+  position: relative;
+  width: 690px; }
+
 body {
   font-family: Montserrat;
   font-style: normal;

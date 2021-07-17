@@ -1,5 +1,7 @@
 block config
   include pug/config.pug
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 block components
   include pug/components/textfield.pug
   include pug/components/buttons.pug
@@ -8,6 +10,9 @@ block components
   include pug/components/toggle_button.pug
   include pug/components/bullet_list.pug
   include pug/components/rich_checkbox.pug
+  include pug/components/icon_info.pug
+  include pug/components/like_button.pug
+  include pug/components/feedback.pug
 doctype html
 html
   head(lang=lang)
@@ -30,3 +35,5 @@ html
     footer.footer 
       
       include pug/_footer.pug
+  script 
+    include js/like_button.js
