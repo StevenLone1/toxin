@@ -3,6 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+var webpack = require('webpack');
 
 module.exports = {
     context: path.resolve(__dirname,'src'),
@@ -19,6 +20,11 @@ module.exports = {
     },
 
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.$': 'jquery',
+          }),
         new HTMLWebpackPlugin({
             template: './index.pug',
             filename:'[name].html'
@@ -36,6 +42,7 @@ module.exports = {
                 filename:'[name].css'
             }
         ),
+        
     ],
     module: {
         rules: [
