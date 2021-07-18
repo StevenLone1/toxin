@@ -1,0 +1,42 @@
+extends ../base/base.pug
+
+
+append config
+  -var myTitle='Главная'
+  -var myDesc ='Гайды'
+
+block header 
+  include ../../components/header/header.pug
+  +header
+block main
+  include ../../components/textfield/textfield.pug
+  //- +textfield('Email')
+  //- +subs_textfield('Email')
+  +masked_textfield('ДД.ММ.ГГГГ')
+  //- +button_fill('DS')
+  //- +button_nofill('DS')
+  //- +button_noborder('CLick')
+  //- +button_long('CLICK')
+  //- +radio_sex
+  //- +checkbox_default(id1,'Можно курить')
+  //- +toggle_button
+  //- +bullet_list("Нельзя с питомцами")
+  //- +bullet_list("Без вечеринок и мероприятий")
+  //- +bullet_list("Время прибытия — после 13:00, а выезд до 12:00")
+  //- +rich_checkbox("1","Широкий коридор","Ширина коридоров в номере не менее 91 см.")
+  //- +rich_checkbox("2","Помощник для инвалидов","На 1 этаже вас встретит специалист  и проводит до номера.")
+  //- +like_button
+  //- +icon_info("mood","Комфорт","Шумопоглощающие стены")
+  //- +icon_info("location_city","Удобство","Окно в каждой из спален")
+  //- +feedback_field
+block footer
+  include ../../components/footer/footer.pug
+  +footer
+//-  .main_pic
+  
+
+  
+  
+    
+      
+    

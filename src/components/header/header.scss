@@ -1,0 +1,39 @@
+
+.logo_pic{
+   margin-bottom: 15px;
+   margin-top: 15px;
+}
+ .menu{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+   justify-content: space-between;
+  
+ }
+ 
+ .header_list{
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+ }
+
+ .header_item{
+   margin-right: 20px;
+     
+ }
+ .header_item:last-child{
+   margin-right: 0px;
+ }
+.navbar{
+   position: relative;
+   
+}
+ .header_link{
+   font-size: 14px;
+   line-height: 32px;
+   color:rgba(31, 32, 65, 0.5);
+   text-decoration: none;
+    
+ }
+
+ 
