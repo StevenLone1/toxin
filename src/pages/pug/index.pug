@@ -1,4 +1,4 @@
-extends ../base/base.pug
+extends base.pug
 
 
 append config
@@ -10,9 +10,16 @@ block header
   +header
 block main
   include ../../components/textfield/textfield.pug
+  +masked_textfield('ДД.ММ.ГГГГ')
+  include ../../components/dropdown/dropdown.pug
+  +dropdown
+  include ../../components/expandable_checkbox/expandable_checkbox.pug
+  +expandable_checkbox
+  include ../../components/slider/slider.pug
+  +slider
   //- +textfield('Email')
   //- +subs_textfield('Email')
-  +masked_textfield('ДД.ММ.ГГГГ')
+  
   //- +button_fill('DS')
   //- +button_nofill('DS')
   //- +button_noborder('CLick')

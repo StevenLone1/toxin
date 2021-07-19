@@ -15,8 +15,6 @@ function isLike(){
     }
     document.getElementById('likecount').innerHTML = b;
     
-    console.log(c);
-    console.log(c%2);
 }
 
 document.getElementById('like_trigger').addEventListener('click',isLike);

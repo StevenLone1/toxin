@@ -1,0 +1,17 @@
+include ../checkbox_buttons/checkbox_buttons.pug
+mixin expandable_checkbox
+    .expandable_checkbox#checkbox_trigger
+        p.expandable_text expandable checkbox list
+        span.material-icons.expand_arrow#expand_icon expand_more
+    .expandable_list.expandable_list_none#expand_list
+        +checkbox_default('expand1','Завтрак')
+        +checkbox_default('expand2','Письменный стол')
+        +checkbox_default('expand3','Стул для кормления')
+        +checkbox_default('expand4','Кроватка')
+        +checkbox_default('expand5','Телевизор')
+        +checkbox_default('expand6','Шампунь')
+        +checkbox_default('expand7','Телевизор')
+        
+        
+        //- .expandable_button
+        //-     input.expandable_input(type="button")

@@ -6,10 +6,15 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 
+
 module.exports = {
     context: path.resolve(__dirname,'src'),
     mode: 'development',
-    entry:{'index': './pages/index/index.js'},
+    entry:{ 'index': ['./pages/js/index.js'],
+            'colors_type': ['./pages/js/colors_type.js'],
+            'form_elements': ['./pages/js/form_elements.js']        
+    
+},
    
     output: {
         filename: '[name].js',
@@ -21,10 +26,20 @@ module.exports = {
     },
 
     plugins: [
-       
         new HTMLWebpackPlugin({
-            template: './pages/index/index.pug',
-            filename:'[name].html'
+            template: './pages/pug/index.pug',
+            filename:'index.html',
+            chunks: ['index'],
+        }),
+        new HTMLWebpackPlugin({
+            template: './pages/pug/colors_type.pug',
+            filename:'colors_type.html',
+            chunks: ['colors_type'],
+        }),
+        new HTMLWebpackPlugin({
+            template: './pages/pug/form_elements.pug',
+            filename:'form_elements.html',
+            chunks: ['form_elements'],
         }),
         new CleanWebpackPlugin(),
         //new CopyWebpackPlugin([
