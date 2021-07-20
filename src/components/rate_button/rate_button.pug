@@ -1,0 +1,5 @@
+mixin rate_button(value)
+    .rate_button
+        input.rate_input(type="radio" name="rating" value=value)
+        label.material-icons.rate_text(for=value) star_outline
+        p.material-icons.rate_text.rate_fill star_rate

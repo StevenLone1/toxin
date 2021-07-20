@@ -184,6 +184,9 @@ body {
   font-size: 12px;
   line-height: 15px; }
 
+.but_long:active {
+  opacity: 0.5; }
+
 .textfield_mixin {
   width: 320px;
   height: 44px;
@@ -628,4 +631,130 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 .slider {
   width: 266px;
   height: 6px; }
+
+.noUi-connect {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 3px; }
+
+.noUi-handle::after, .noUi-handle::before {
+  display: none; }
+
+.noUi-handle {
+  box-shadow: none;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
+
+.noUi-horizontal .noUi-handle {
+  width: 15px;
+  height: 15px;
+  top: -5px;
+  right: -1px; }
+
+.slider_price {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5); }
+
+.slider_div {
+  width: 266px; }
+
+.rate_button {
+  position: relative; }
+
+.rate_text {
+  position: absolute;
+  color: #BC9CFF;
+  font-size: 24px;
+  line-height: 20px;
+  left: 1px;
+  top: 0px;
+  z-index: -2; }
+
+.rate_fill {
+  margin: -1;
+  z-index: -1;
+  font-size: 20px;
+  left: 4px;
+  opacity: 0; }
+
+.rate_fill::after {
+  content: '';
+  opacity: 1; }
+
+.rate_input {
+  appearance: none;
+  z-index: 2;
+  width: 15px;
+  height: 15px; }
+
+.rate_input:checked + .rate_fill {
+  opacity: 1; }
+
+.pagination {
+  display: flex;
+  position: relative;
+  width: 300px; }
+
+.first_page {
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 20px; }
+
+.first_page::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0px 0px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  position: absolute;
+  left: 2px;
+  z-index: -1; }
+
+.other_page {
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  margin-right: 33px; }
+
+.last_page {
+  font-size: 24px;
+  line-height: 20px;
+  color: #fff; }
+
+.last_page::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0px 0px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  position: absolute;
+  top: 13px;
+  right: 50px;
+  z-index: -1; }
+
+.pagination_subtext {
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 10px; }
 

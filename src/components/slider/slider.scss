@@ -2,3 +2,32 @@
     width: 266px;
     height: 6px;
 }
+.noUi-connect{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 3px;
+}
+.noUi-handle::after, .noUi-handle::before{
+    display: none;
+}
+.noUi-handle{
+    box-shadow: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.noUi-horizontal .noUi-handle{
+    width:15px;
+    height:15px;
+    top:-5px;
+    right:-1px;
+}
+.slider_price{
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+}
+.slider_div{
+    width: 266px;
+}

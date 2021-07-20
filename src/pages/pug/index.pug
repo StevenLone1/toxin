@@ -17,13 +17,18 @@ block main
   +expandable_checkbox
   include ../../components/slider/slider.pug
   +slider
+  include ../../components/rate_button/rate_button.pug
+  +rate_button
+  include ../../components/pagination/pagination.pug
+  +pagination
   //- +textfield('Email')
   //- +subs_textfield('Email')
   
   //- +button_fill('DS')
   //- +button_nofill('DS')
   //- +button_noborder('CLick')
-  //- +button_long('CLICK')
+  include ../../components/buttons/buttons.pug
+  +button_long('CLICK')
   //- +radio_sex
   //- +checkbox_default(id1,'Можно курить')
   //- +toggle_button

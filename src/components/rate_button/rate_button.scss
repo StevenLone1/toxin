@@ -1,0 +1,39 @@
+.rate_button{
+    position: relative;
+}
+
+
+
+.rate_text{
+    position: absolute;
+    color: #BC9CFF;
+    font-size: 24px;
+    line-height: 20px;
+    left:1px;
+    top:0px;
+    z-index: -2;
+}
+
+.rate_fill{
+    margin:-1;
+    z-index: -1;
+    font-size: 20px;
+    left:4px;
+    opacity: 0;
+}
+
+.rate_fill::after{
+    content:'';
+    opacity: 1;
+}
+.rate_input{
+    appearance: none;
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    
+}
+.rate_input:checked + .rate_fill{
+    opacity: 1;
+    
+}

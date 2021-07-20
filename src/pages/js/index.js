@@ -10,6 +10,7 @@ import '../../components/expandable_checkbox/expandable_checkbox.scss'
 import '../../components/expandable_checkbox/expandable_checkbox.js'
 import '../../components/slider/slider.js'
 import '../../components/slider/slider.scss'
-
+import '../../components/rate_button/rate_button.scss'
+import '../../components/pagination/pagination.scss'
 
 
