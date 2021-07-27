@@ -1,4 +1,32 @@
 extends base.pug
-
+block header 
+    .logo_uikit
 block main
-    h1 туттст
+    .wrapper_uikit
+        mixin color_pattern(text1,text2,color)
+            .color_pattern
+                .color_block(style=color) 
+                .text_block 
+                    p.color_name=text1 
+                    p.color_code=text2
+        .colors_type_page 
+            .colors_block_name
+                +color_pattern('Dark Shade 100%','#1F2041','background-color: #1F2041;')
+                +color_pattern('Dark Shade 75%','#1F2041','background-color: rgba(31, 32, 65, 0.75);')
+                +color_pattern('Dark Shade 50%','#1F2041','background-color: rgba(31, 32, 65, 0.5);')
+                +color_pattern('Dark Shade 25%','#1F2041','background-color: rgba(31, 32, 65, 0.25);')
+                +color_pattern('Dark Shade 5%','#1F2041','background-color: rgba(31, 32, 65, 0.05);')
+                +color_pattern('Purple','#BC9CFF','background-color: #BC9CFF;')
+                +color_pattern('Green','#6FCF97','background-color: #6FCF97;')
+            .text_size 
+                .text_size_title_list
+                    h1.text_size_title.text_size_title_h1 H1
+                    h2.text_size_title.text_size_title_h2 H2
+                    h3.text_size_title.text_size_title_h3 H3
+                    p.text_size_title.text_size_title_p Body
+                .text_size_description
+                    h1.text_size_content.text_size_content_h1 This one is the sub-section or widget title
+                    h2.text_size_content.text_size_content_h2 Next one is the item title inside widgets
+                    h3.text_size_content.text_size_content_h3 This is a label or CTA text
+                    p.text_size_content.text_size_content_p This is the body text which is used for most of the design, like paragraphs, lists, etc.
+    

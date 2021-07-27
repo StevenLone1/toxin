@@ -12,7 +12,8 @@ module.exports = {
     mode: 'development',
     entry:{ 'index': ['./pages/js/index.js'],
             'colors_type': ['./pages/js/colors_type.js'],
-            'form_elements': ['./pages/js/form_elements.js']        
+            'form_elements': ['./pages/js/form_elements.js'],
+            'header_footer': ['./pages/js/header_footer.js'],      
     
 },
    
@@ -40,6 +41,11 @@ module.exports = {
             template: './pages/pug/form_elements.pug',
             filename:'form_elements.html',
             chunks: ['form_elements'],
+        }),
+        new HTMLWebpackPlugin({
+            template: './pages/pug/header_footer.pug',
+            filename:'header_footer.html',
+            chunks: ['header_footer'],
         }),
         new CleanWebpackPlugin(),
         //new CopyWebpackPlugin([

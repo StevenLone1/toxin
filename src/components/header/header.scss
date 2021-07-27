@@ -1,4 +1,4 @@
-
+@import '../buttons/buttons.scss';
 .logo_pic{
    margin-bottom: 15px;
    margin-top: 15px;
@@ -8,6 +8,7 @@
    flex-wrap: wrap;
    align-items: flex-end;
    justify-content: space-between;
+   background:#fff;
   
  }
  

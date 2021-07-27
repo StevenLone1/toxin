@@ -1,3 +1,4 @@
+@import '../textfield/textfield.scss';
 .copyright{
     display: flex;
     flex-wrap: wrap;
@@ -94,4 +95,8 @@
     width: 260px;
     height: 44px;
     position: relative;
+}
+
+.footer{
+    background:#fff;
 }

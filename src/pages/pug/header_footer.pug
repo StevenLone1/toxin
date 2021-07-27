@@ -1,0 +1,11 @@
+extends base.pug
+block header 
+    .logo_uikit
+block main
+    .wrapper_uikit
+        include ../../components/header/header.pug
+        +header
+    .empty_field
+    .wrapper_uikit
+        include ../../components/footer/footer.pug
+        +footer

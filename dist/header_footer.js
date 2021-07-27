@@ -10,13 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./pages/js/colors_type.js":
-/*!*********************************!*\
-  !*** ./pages/js/colors_type.js ***!
-  \*********************************/
+/***/ "./pages/js/header_footer.js":
+/*!***********************************!*\
+  !*** ./pages/js/header_footer.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _config_fonts_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../config/fonts.scss */ \"./config/fonts.scss\");\n/* harmony import */ var _config_uikit_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../config/uikit.scss */ \"./config/uikit.scss\");\n/* harmony import */ var _scss_colors_type_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/colors_type.scss */ \"./pages/scss/colors_type.scss\");\n\n\n\n\n//# sourceURL=webpack:///./pages/js/colors_type.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _config_fonts_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../config/fonts.scss */ \"./config/fonts.scss\");\n/* harmony import */ var _config_uikit_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../config/uikit.scss */ \"./config/uikit.scss\");\n/* harmony import */ var _scss_header_footer_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/header_footer.scss */ \"./pages/scss/header_footer.scss\");\n/* harmony import */ var _components_header_header_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/header/header.scss */ \"./components/header/header.scss\");\n/* harmony import */ var _components_footer_footer_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/footer/footer.scss */ \"./components/footer/footer.scss\");\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/js/header_footer.js?");
+
+/***/ }),
+
+/***/ "./components/footer/footer.scss":
+/*!***************************************!*\
+  !*** ./components/footer/footer.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./components/footer/footer.scss?");
+
+/***/ }),
+
+/***/ "./components/header/header.scss":
+/*!***************************************!*\
+  !*** ./components/header/header.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./components/header/header.scss?");
 
 /***/ }),
 
@@ -40,13 +60,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./pages/scss/colors_type.scss":
-/*!*************************************!*\
-  !*** ./pages/scss/colors_type.scss ***!
-  \*************************************/
+/***/ "./pages/scss/header_footer.scss":
+/*!***************************************!*\
+  !*** ./pages/scss/header_footer.scss ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./pages/scss/colors_type.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./pages/scss/header_footer.scss?");
 
 /***/ })
 
@@ -93,7 +113,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./pages/js/colors_type.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./pages/js/header_footer.js");
 /******/ 	
 /******/ })()
 ;
