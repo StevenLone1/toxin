@@ -13,6 +13,8 @@ block main
   +masked_textfield('ДД.ММ.ГГГГ')
   include ../../components/dropdown/dropdown.pug
   +dropdown
+  include ../../components/dropdown_w_buttons/dropdown_w_buttons.pug
+  +dropdown_with_buttons
   include ../../components/expandable_checkbox/expandable_checkbox.pug
   +expandable_checkbox
   include ../../components/slider/slider.pug
@@ -29,6 +31,8 @@ block main
   //- +button_noborder('CLick')
   include ../../components/buttons/buttons.pug
   +button_long('CLICK')
+  include ../../components/datepicker/datepicker.pug
+  +datepicker('1','2')
   //- +radio_sex
   //- +checkbox_default(id1,'Можно курить')
   //- +toggle_button

@@ -13,7 +13,8 @@ module.exports = {
     entry:{ 'index': ['./pages/js/index.js'],
             'colors_type': ['./pages/js/colors_type.js'],
             'form_elements': ['./pages/js/form_elements.js'],
-            'header_footer': ['./pages/js/header_footer.js'],      
+            'header_footer': ['./pages/js/header_footer.js'],
+            'cards': ['./pages/js/cards.js']   
     
 },
    
@@ -46,6 +47,11 @@ module.exports = {
             template: './pages/pug/header_footer.pug',
             filename:'header_footer.html',
             chunks: ['header_footer'],
+        }),
+        new HTMLWebpackPlugin({
+            template: './pages/pug/cards.pug',
+            filename:'cards.html',
+            chunks: ['cards'],
         }),
         new CleanWebpackPlugin(),
         //new CopyWebpackPlugin([

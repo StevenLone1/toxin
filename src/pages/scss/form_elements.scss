@@ -1,0 +1,32 @@
+.form_elements{
+    display: flex;
+    justify-content: space-between;
+}
+.form_column{
+    width:320px;
+    
+}
+
+.form_label{
+    display: flex;
+}
+.main_label{
+    font-family: 'Montserrat-Bold';
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+.empty_field{
+    height: 100px;
+}
+
+.last_content{
+    display: flex;
+}
+.last_content_item{
+    margin-right: 140px;
+}
+.button_margin{
+    margin-bottom: 30px;
+}

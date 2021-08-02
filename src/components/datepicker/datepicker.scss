@@ -1,0 +1,80 @@
+.datepicker--buttons{
+    flex-direction:row-reverse;
+}
+
+.datepicker{
+    font-family: 'Montserrat';
+    width: 320px;
+}
+.datepicker--nav-title{
+    font-family: 'Montserrat-Bold';
+    font-size: 19px;
+    line-height: 23px;
+}
+.datepicker--nav-action{
+    color: #BC9CFF;
+}
+.datepicker--nav{
+    border-bottom: 0;
+}
+.datepicker--buttons{
+    border-top:0;
+}
+.datepicker--day-name{
+    color: #BC9CFF;
+    font-family: 'Montserrat-Bold';
+    margin: 8px 0 8px;
+}
+.datepicker--cell-day{
+    color: rgba(31, 32, 65, 0.5);
+}
+.datepicker--cell.-current-{
+    color: #FFFFFF;
+    border-radius:50%;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.datepicker--content{
+    font-size: 12px;
+    padding: 20px;
+}
+.datepicker--button{
+    font-family: 'Montserrat-Bold';
+    text-transform: uppercase;
+    color: #BC9CFF;
+    font-size: 12px;
+}
+.datepicker--cell.-selected-{
+    border-radius:50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.datepicker--cell.-selected-.-focus-{
+    border-radius:50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.datepicker--cell.-in-range-{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.text-field{
+    width: 150px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-color: rgba(31, 32, 65, 0.25);
+    color: rgba(31, 32, 65, 0.75);
+}
+.text-field_one{
+    width: 266px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-color: rgba(31, 32, 65, 0.25);
+    color: rgba(31, 32, 65, 0.75);
+}
+.date-dropdown_inner {
+    display: flex;
+    justify-content: space-between;
+}

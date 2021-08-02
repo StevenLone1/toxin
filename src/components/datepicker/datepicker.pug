@@ -1,0 +1,13 @@
+mixin datepicker(id_start,id_end)
+    .date-dropdown
+        .date-dropdown_inner 
+            label.date-dropdown_more
+                input.date-dropdown_input.date-dropdown_first.text-field(id=id_start type="text" data-range="true" data-multiple-dates-separator="-" placeholder="ДД.ММ.ГГГГ" readonly)
+            label.date-dropdown_more
+                input.date-dropdown_input.date-dropdown_second.text-field(id=id_end type="text" placeholder="ДД.ММ.ГГГГ" readonly)
+
+mixin one_datepicker(id)
+    .date-dropdown
+        .date-dropdown_inner 
+            label.date-dropdown_more
+                input.date-dropdown_input.date-dropdown_first.text-field_one(id=id type="text" data-range="true" data-multiple-dates-separator="-" placeholder="ДД.ММ.ГГГГ" readonly)

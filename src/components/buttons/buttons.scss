@@ -60,3 +60,14 @@
 .but_long:active{
     opacity: 0.5;
 }
+.button_long{
+    position: relative;
+}
+.button_arrow{
+    color:#fff;
+    position: absolute;
+    z-index: 2;
+    margin:0;
+    right:7px;
+    top:5px;
+}

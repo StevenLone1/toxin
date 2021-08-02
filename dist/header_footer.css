@@ -96,6 +96,17 @@ body {
 .but_long:active {
   opacity: 0.5; }
 
+.button_long {
+  position: relative; }
+
+.button_arrow {
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  right: 7px;
+  top: 5px; }
+
 .logo_pic {
   margin-bottom: 15px;
   margin-top: 15px; }
@@ -165,9 +176,10 @@ body {
 
 .subs_textfield_button {
   position: relative;
+  cursor: pointer;
   border: none;
   width: 43px;
-  height: 43px;
+  height: 41px;
   background-color: #FFFFFF;
   background-image: url(ae9e8d9bc1e9ad88ca1c02c3ccec6d5b.svg);
   background-position: center;

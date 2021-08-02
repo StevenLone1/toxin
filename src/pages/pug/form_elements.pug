@@ -1,0 +1,83 @@
+extends base.pug
+block header 
+    .logo_uikit
+block main
+    mixin main_label(text)
+        .form_label 
+            h3.main_label=text
+    .wrapper_uikit
+        .form_elements
+            .form_column
+                +main_label('Text field')
+                include ../../components/textfield/textfield.pug
+                +textfield('Email')
+                +main_label('Masked text field')
+                +masked_textfield('ДД.ММ.ГГГГ')
+                +main_label('Date dropdown')
+                include ../../components/datepicker/datepicker.pug
+                +datepicker('1','2')
+                +main_label('Filter date dropdown')
+                +one_datepicker('one','two')
+                +main_label('Subscription text field')
+                +subs_textfield('Email')
+                .empty_field
+                +main_label('Dropdown')
+                include ../../components/expandable_checkbox/expandable_checkbox.pug
+                +expandable_checkbox
+            .form_column
+                +main_label('checkbox buttons')
+                include ../../components/checkbox_buttons/checkbox_buttons.pug
+                +checkbox_default(id1,'Можно курить')
+                +checkbox_default(id2,'Можно с питомцами')
+                +checkbox_default(id3,'Можно пригласить гостей (до 10 человек)')
+                +main_label('radio buttons')
+                include ../../components/radio_button/radio_button.pug
+                +radio_sex
+                +main_label('toggle')
+                include ../../components/toggle_button/toggle_button.pug
+                +toggle_button
+                +main_label('like button')
+                include ../../components/like_button/like_button.pug
+                +like_button
+                +main_label('rate button')
+                include ../../components/rate_button/rate_button.pug
+                +rate_button(1)
+                .empty_field
+                +main_label('Dropdown')
+                include ../../components/dropdown/dropdown.pug
+                +dropdown
+                +main_label('rich checkbox')
+                include ../../components/rich_checkbox/rich_checkbox.pug
+                +rich_checkbox("1","Широкий коридор","Ширина коридоров в номере не менее 91 см.")
+                +rich_checkbox("2","Помощник для инвалидов","На 1 этаже вас встретит специалист  и проводит до номера.")
+            .form_column
+                +main_label('range slider')
+                include ../../components/slider/slider.pug
+                +slider
+                +main_label('buttons')
+                include ../../components/buttons/buttons.pug
+                .button_margin
+                    +button_fill('CLICK ME')
+                .button_margin
+                    +button_nofill('CLICK ME')
+                .button_margin
+                    +button_noborder('CLICK ME')
+                .button_margin
+                    +button_long('ПЕРЕЙТИ К ОПЛАТЕ')
+                +main_label('pagination')
+                include ../../components/pagination/pagination.pug
+                +pagination
+                +main_label('Dropdown')
+                +main_label('bullet list')
+                include ../../components/bullet_list/bullet_list.pug
+                +bullet_list("Нельзя с питомцами")
+                +bullet_list("Без вечеринок и мероприятий")
+                +bullet_list("Время прибытия — после 13:00, а выезд до 12:00")
+        .last_content
+            .last_content_item
+                include ../../components/icon_info/icon_info.pug
+                +icon_info("mood","Комфорт","Шумопоглощающие стены")
+                +icon_info("location_city","Удобство","Окно в каждой из спален")
+            .last_content_item
+                include ../../components/feedback/feedback.pug
+                +feedback_field
