@@ -1,0 +1,27 @@
+mixin hotel_number
+    .hotel_number 
+        .hotel_number_content
+            .hotel_number_head
+                .hotel_number_n
+                    p.hotel_number_text № 888
+                    p.hotel_number_class люкс
+                p.hotel_number_per_day 9 990₽ в сутки
+            include ../../datepicker/datepicker.pug
+            +datepicker('1','2','прибытие','выезд')
+            .hotel_number_prices 
+                .prices_line
+                    p.hotel_number_price_text 9 990₽ х 4 суток
+                    p.hotel_number_price_text 39 960₽
+                .prices_line
+                    .price_first_line
+                        p.hotel_number_price_text Сбор за услуги: скидка 2 179₽
+                        p.price_about i
+                    p.hotel_number_price_text 0₽
+                .prices_line
+                    .price_first_line
+                        p.hotel_number_price_text2 Сбор за дополнительные услуги
+                        p.price_about i
+                    p.hotel_number_price_text 300₽
+            .hotel_number_button
+                include ../../buttons/buttons.pug
+                +button_long('забронировать')

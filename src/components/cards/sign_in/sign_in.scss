@@ -1,4 +1,4 @@
-.find_number{
+.sign_in{
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -8,17 +8,31 @@
     padding:30px;
     
 }
-.find_number_content{
+.sign_in_content{
     width:320px;
     margin: 0 auto;
 }
-.find_number_text{
+.sign_in_text{
     font-family: 'Montserrat-Bold';
     font-size: 24px;
     line-height: 29px;
     color: #1F2041;
-    margin: 10px 0 0 0;
+    margin: 10px 0 20px 0;
 }
-.find_number_button{
-    margin-top: 30px;
+.sign_in_button{
+    margin:5px 0 30px 0;
+}
+
+.no_exist{
+    display: flex;
+    justify-content: space-between;
+}
+.no_exist_text{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+.no_exist_button{
+    margin-top: 5px;
 }

@@ -17,12 +17,12 @@
 }
 .icon_info_text{
     color:rgba(31, 32, 65, 0.75);
-    font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
     padding-left: 55px;
     margin: 0 ;
+    font-family: 'Montserrat-Bold';
 }
 .icon_info_subtext{
     color:rgba(31, 32, 65, 0.75);
@@ -31,6 +31,7 @@
     font-weight: 400;
     padding-left: 55px;
     margin: 0 ;
+    font-family: 'Montserrat';
 }
 .icon_info_hr{
     border: 1px solid white;

@@ -1,0 +1,14 @@
+mixin sign_in 
+    .sign_in
+        .sign_in_content
+            p.sign_in_text Войти
+            include ../../textfield/textfield.pug
+            +textfield('Email')
+            +textfield('Пароль')
+            .sign_in_button
+                include ../../buttons/buttons.pug
+                +button_long('войти')
+            .no_exist
+                p.no_exist_text Нет аккаунта на Toxin?
+                .no_exist_button
+                    +button_nofill('создать')

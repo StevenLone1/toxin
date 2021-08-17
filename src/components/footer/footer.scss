@@ -1,4 +1,8 @@
 @import '../textfield/textfield.scss';
+.footer{
+    max-width: 1160px;
+   margin: 0 auto;
+}
 .copyright{
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +27,7 @@
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
+    font-family: 'Montserrat';
 }
 
 .footer_hr{
@@ -47,7 +52,7 @@
 }
 
 .footer_menu-title{
-    font-family: Montserrat-Bold;
+    font-family: 'Montserrat-Bold';
     color:#1F2041;
     font-style: normal;
     font-weight: bold;
@@ -63,6 +68,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
+    font-family: 'Montserrat';
     
 }
 .footer_li{
@@ -77,6 +83,7 @@
     font-size: 14px;
     line-height: 24px;
     color:rgba(31, 32, 65, 0.75);
+    font-family: 'Montserrat';
 }
 
 
@@ -86,6 +93,7 @@
 
 .footer_subs-text{
     color:rgba(31, 32, 65, 0.75);
+    font-family: 'Montserrat';
 }
 
 
@@ -97,6 +105,26 @@
     position: relative;
 }
 
-.footer{
+.background_footer{
     background:#fff;
+}
+.footer_mini{
+    width:560px;
+    background:#fff;
+    padding:100px 110px 100px 110px;
+}
+.footer_mini_align{
+    margin:0 auto;
+    padding-left: 32px;
+}
+.footer_mini_icons{
+    width:110px;
+    margin:0 auto;
+}
+.copyright_mini{
+    text-align: center;
+}
+.footer_icons{
+    margin:0;
+    padding:0;
 }

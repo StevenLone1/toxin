@@ -1,0 +1,9 @@
+mixin find_number 
+    .find_number
+        .find_number_content 
+            p.find_number_text Найдём номера под ваши пожелания
+            include ../../datepicker/datepicker.pug
+            +datepicker('1','2','прибытие','выезд')
+            .find_number_button
+                include ../../buttons/buttons.pug
+                +button_long('подобрать номер')

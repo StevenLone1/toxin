@@ -1,0 +1,23 @@
+mixin sign_up 
+    .sign_up
+        .sign_up_content
+            p.sign_up_text Регистрация аккаунта
+            include ../../textfield/textfield.pug
+            +textfield('Имя')
+            +textfield('Фамилия')
+            include ../../radio_button/radio_button.pug
+            +radio_sex
+            p.sign_up_subtext дата рождения
+            +masked_textfield('ДД.ММ.ГГГГ')
+            p.sign_up_subtext данные для входа в сервис
+            +textfield('Email')
+            +textfield('Пароль')
+            include ../../toggle_button/toggle_button.pug
+            +toggle_button
+            .sign_up_button
+                include ../../buttons/buttons.pug
+                +button_long('перейти к оплате')
+            .already_exist
+                p.already_exist_text Уже есть аккаунт на Toxin
+                .already_exist_button
+                    +button_nofill('войти')

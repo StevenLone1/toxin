@@ -30,12 +30,24 @@
   max-width: 1160px;
   margin: 0 auto; }
 
+body {
+  margin: 0; }
+
 .cards_page {
   display: flex;
   justify-content: space-between; }
 
 .cards_column {
   width: 380px; }
+
+body {
+  background: #E5E5E5; }
+
+.find_number_card {
+  margin-bottom: 20px; }
+
+.hotel_number_card {
+  margin-bottom: 20px; }
 
 .but_nofill {
   width: 87px;
@@ -48,7 +60,8 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px; }
+  line-height: 15px;
+  font-family: 'Montserrat'; }
 
 .but_nofill:active {
   opacity: 0.5; }
@@ -63,7 +76,8 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px; }
+  line-height: 15px;
+  font-family: 'Montserrat'; }
 
 .but_fill:active {
   opacity: 0.5; }
@@ -77,7 +91,8 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px; }
+  line-height: 15px;
+  font-family: 'Montserrat'; }
 
 .but_noborder:active {
   color: rgba(31, 32, 65, 0.5); }
@@ -92,7 +107,9 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px; }
+  line-height: 15px;
+  text-transform: uppercase;
+  font-family: 'Montserrat'; }
 
 .but_long:active {
   opacity: 0.5; }
@@ -794,7 +811,8 @@
   box-sizing: border-box;
   border-radius: 4px;
   border-color: rgba(31, 32, 65, 0.25);
-  color: rgba(31, 32, 65, 0.75); }
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 15px; }
 
 .text-field_one {
   width: 266px;
@@ -804,10 +822,367 @@
   box-sizing: border-box;
   border-radius: 4px;
   border-color: rgba(31, 32, 65, 0.25);
-  color: rgba(31, 32, 65, 0.75); }
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 15px; }
 
 .date-dropdown_inner {
   display: flex;
   justify-content: space-between; }
 
+.date-dropdown_more {
+  font-family: 'Montserrat-Bold';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin: 20px 0 0 0;
+  width: 150px; }
+
+.date-dropdown_input {
+  margin: 5px 0 0 0; }
+
+.find_number {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  padding: 30px; }
+
+.find_number_content {
+  width: 320px;
+  margin: 0 auto; }
+
+.find_number_text {
+  font-family: 'Montserrat-Bold';
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+  margin: 10px 0 0 0; }
+
+.find_number_button {
+  margin-top: 30px; }
+
+.textfield_mixin {
+  width: 320px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-color: rgba(31, 32, 65, 0.25);
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+  padding-left: 15px; }
+
+.textfield_mixin:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5); }
+
+.textfield_mixin:active {
+  border: 1px solid rgba(31, 32, 65, 0.5); }
+
+.subs_textfield_mixin {
+  position: static;
+  width: 267px;
+  height: 44px;
+  border: 1px solid;
+  font-family: 'Montserrat';
+  border-radius: 4px;
+  border-color: rgba(31, 32, 65, 0.25); }
+
+.subs_textfield {
+  position: relative;
+  left: 15px;
+  bottom: 40%;
+  width: 219px;
+  height: 40px;
+  background: #FFFFFF;
+  border: none;
+  font-family: 'Montserrat'; }
+
+.subs_textfield:focus {
+  outline: 0;
+  outline-offset: 0; }
+
+.subs_textfield_button {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  width: 43px;
+  height: 41px;
+  background-color: #FFFFFF;
+  background-image: url(ae9e8d9bc1e9ad88ca1c02c3ccec6d5b.svg);
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.toggle_button {
+  position: relative; }
+
+.toggle_input {
+  appearance: none;
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 20px;
+  margin: 0px; }
+
+.toggle_label {
+  padding-left: 50px;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 20px;
+  font-family: 'Montserrat'; }
+
+.toggle_label:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 20px;
+  box-shadow: 0 0 0px 0px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.toggle_label:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2; }
+
+.toggle_input:checked + .toggle_label:before {
+  border-color: #BC9CFF; }
+
+.toggle_input:checked + .toggle_label:after {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  left: 24px; }
+
+.radio_button {
+  position: relative; }
+
+.radio_input {
+  appearance: none;
+  position: absolute;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+  margin: 0px; }
+
+.radio_text {
+  padding-left: 30px;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 20px;
+  font-family: 'Montserrat'; }
+
+.radio_text:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 0px 0px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.radio_text:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+  opacity: 0; }
+
+.radio_input:checked + .radio_text:before {
+  border-color: #BC9CFF; }
+
+.radio_input:checked + .radio_text:after {
+  opacity: 1; }
+
+.radio_input:checked + .radio_text {
+  color: rgba(31, 32, 65, 0.75); }
+
+.radio_sex {
+  display: flex; }
+
+.sign_up {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  padding: 30px; }
+
+.sign_up_content {
+  width: 320px;
+  margin: 0 auto; }
+
+.sign_up_text {
+  font-family: 'Montserrat-Bold';
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+  margin: 10px 0 20px 0; }
+
+.sign_up_subtext {
+  font-family: 'Montserrat-Bold';
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase; }
+
+.sign_up_button {
+  margin: 20px 0 30px 0; }
+
+.already_exist {
+  display: flex;
+  justify-content: space-between; }
+
+.already_exist_text {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000; }
+
+.already_exist_button {
+  margin-top: 5px; }
+
+.sign_in {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  padding: 30px; }
+
+.sign_in_content {
+  width: 320px;
+  margin: 0 auto; }
+
+.sign_in_text {
+  font-family: 'Montserrat-Bold';
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+  margin: 10px 0 20px 0; }
+
+.sign_in_button {
+  margin: 5px 0 30px 0; }
+
+.no_exist {
+  display: flex;
+  justify-content: space-between; }
+
+.no_exist_text {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000; }
+
+.no_exist_button {
+  margin-top: 5px; }
+
+.hotel_number {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  padding: 30px; }
+
+.hotel_number_content {
+  width: 320px;
+  margin: 0 auto; }
+
+.hotel_number_head {
+  display: flex;
+  justify-content: space-between; }
+
+.hotel_number_n {
+  display: flex; }
+
+.hotel_number_text {
+  font-family: 'Montserrat-Bold';
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+  margin: 0 8px 0 0; }
+
+.hotel_number_class {
+  font-family: 'Montserrat-Bold';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF; }
+
+.hotel_number_per_day {
+  font-family: 'Montserrat-Bold';
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-top: 10px; }
+
+.hotel_number_button {
+  margin-top: 20px; }
+
+.prices_line {
+  display: flex;
+  justify-content: space-between; }
+
+.price_first_line {
+  display: flex; }
+
+.hotel_number_price_text {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 24px; }
+
+.hotel_number_price_text2 {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 214px; }
+
+.price_about {
+  font-family: 'Montserrat-Bold';
+  font-size: 12px;
+  line-height: 19px;
+  color: rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 16px; }
 
