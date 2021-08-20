@@ -6,7 +6,9 @@
     box-sizing: border-box;
     border-radius: 4px;
     border-color: rgba(31, 32, 65, 0.25);
-
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    padding-left: 15px;
 }
 .textfield_mixin:hover{
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -21,7 +23,7 @@
     width: 267px;
     height: 44px;
     border: 1px solid;
- 
+    font-family: 'Montserrat';
     border-radius: 4px;
     border-color: rgba(31, 32, 65, 0.25);
 }
@@ -33,7 +35,7 @@
     height:40px;
     background: #FFFFFF;
     border: none ;
-    
+    font-family: 'Montserrat';
     
 }
 .subs_textfield:focus{

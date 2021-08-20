@@ -9,7 +9,8 @@
    align-items: flex-end;
    justify-content: space-between;
    background:#fff;
-  
+   max-width: 1160px;
+   margin: 0 auto;
  }
  
  .header_list{
@@ -34,7 +35,14 @@
    line-height: 32px;
    color:rgba(31, 32, 65, 0.5);
    text-decoration: none;
-    
+    font-family: 'Montserrat';
  }
 
- 
+.background-color{
+  background: #fff;
+}
+.header_line{
+  width:1px;
+  height: 30px;
+  background: rgba(31, 32, 65, 0.1);
+}

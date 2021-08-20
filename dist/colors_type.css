@@ -30,6 +30,9 @@
   max-width: 1160px;
   margin: 0 auto; }
 
+body {
+  margin: 0; }
+
 .color_pattern {
   display: flex; }
 

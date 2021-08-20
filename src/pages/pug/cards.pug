@@ -7,5 +7,18 @@ block main
             .cards_column
                 .find_number_card 
                     include ../../components/cards/find_number/find_number.pug
-            .cards_column 
-            .cards_column 
+                    +find_number
+                .sign_up_card
+                    include ../../components/cards/sign_up/sign_up.pug
+                    +sign_up
+            .cards_column
+                .hotel_number_card
+                    include ../../components/cards/hotel_number/hotel_number.pug
+                    +hotel_number
+                .sign_in_card
+                    include ../../components/cards/sign_in/sign_in.pug
+                    +sign_in
+            .cards_column
+                .open_datepicker
+                    include ../../components/datepicker/datepicker.pug
+                    +open_datepicker

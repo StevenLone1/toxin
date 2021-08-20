@@ -2,10 +2,13 @@ extends base.pug
 block header 
     .logo_uikit
 block main
-    .wrapper_uikit
-        include ../../components/header/header.pug
-        +header
+    include ../../components/header/header.pug
+    +header
     .empty_field
-    .wrapper_uikit
-        include ../../components/footer/footer.pug
-        +footer
+    +header_nobutton
+    .empty_field
+    include ../../components/footer/footer.pug
+    +footer
+    .empty_field
+    .footer_mini_field
+        +footer_mini

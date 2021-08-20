@@ -13,11 +13,9 @@ block main
                 +textfield('Email')
                 +main_label('Masked text field')
                 +masked_textfield('ДД.ММ.ГГГГ')
-                +main_label('Date dropdown')
                 include ../../components/datepicker/datepicker.pug
-                +datepicker('1','2')
-                +main_label('Filter date dropdown')
-                +one_datepicker('one','two')
+                +datepicker('1','2','date dropdown','date dropdown')
+                +one_datepicker('one','Filter date dropdown')
                 +main_label('Subscription text field')
                 +subs_textfield('Email')
                 .empty_field
